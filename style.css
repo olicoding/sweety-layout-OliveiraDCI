@@ -10,4 +10,49 @@ html {
 
 body {
   font: normal 1.6rem/1.5 Arial, Helvetica, sans-serif;
+  background-color: rgba(150, 150, 150, 0.5);
+}
+
+/* Presets */
+
+.flex {
+  display: flex;
+}
+
+.flex-col {
+  display: flex;
+  flex-direction: column;
+}
+
+/* Header */
+
+header {
+  background-color: #fff;
+  padding: 1em;
+  width: 100vw;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  font-family: "Cookie", cursive;
+  font-size: 5rem;
+  font-weight: bold;
+  font-style: italic;
+  letter-spacing: 2px;
+}
+
+.nav-list {
+  /* display: none; */
+}
+
+.nav-list li {
+  list-style: none;
+}
+
+.nav-btn {
+  padding: 0.8em 1em;
+  margin: 0 0.2em;
+  background-color: rgba(150, 150, 150, 0.5);
+  border-radius: 5px;
 }
