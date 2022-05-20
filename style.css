@@ -10,10 +10,10 @@ html {
 
 body {
   font: normal 1.6rem/1.5 Arial, Helvetica, sans-serif;
-  background-color: rgba(150, 150, 150, 0.5);
+  background-color: rgba(150, 150, 150, 0.2);
 }
 
-/* Presets */
+/* Utilities */
 
 .flex {
   display: flex;
@@ -24,13 +24,45 @@ body {
   flex-direction: column;
 }
 
+.color-deeppink {
+  color: deeppink;
+}
+
+.btn {
+  padding: .5em 2em;
+  background-color: deeppink;
+  width: fit-content;
+  border: 2px solid #333;
+  border-radius: 5px;
+  font-weight: bold;
+  color: #333;
+  cursor: pointer;
+}
+
+.btn:hover {
+
+}
+
+/* Links */
+
+a:link,
+a:visited {
+  text-decoration: none;
+  color: #333;
+}
+
+a:hover,
+a:active {
+  text-shadow: #FC0 0 0 10px;
+}
+
 /* Header */
 
 header {
   position: sticky;
   top: 0;
   background-color: #fff;
-  padding: 1em;
+  padding: .5em 1em;
   width: 100vw;
   justify-content: space-between;
   align-items: center;
@@ -38,10 +70,14 @@ header {
 
 .logo {
   font-family: "Cookie", cursive;
-  font-size: 5rem;
-  font-weight: bold;
+  font-size: 4rem;
+  font-weight: 900;
   font-style: italic;
   letter-spacing: 2px;
+}
+
+.nav-list {
+  display: none;
 }
 
 .nav-list li {
@@ -69,8 +105,9 @@ li:hover::before {
   padding: 0.7em 1em;
   margin: 0 0.2em;
   border-radius: 5px;
-  background-color: rgba(150, 150, 150, 0.5);
-  font-size: 2rem;
+  background-color: rgba(150, 150, 150, 0.2);
+  font-size: 1.2rem;
+  cursor: pointer;
 }
 
 .nav-btn:hover {
@@ -78,13 +115,23 @@ li:hover::before {
   color: #fff;
 }
 
-/* Links */
+/* Hero */
 
-a:link, a:visited {
-  text-decoration: none;
+.hero-bg {
+  background-image: url(./images/sweetBg.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: bottom;
+}
+
+.hero {
+  padding: 3em 2em 4.5em;
+}
+
+.hero p {
+  padding: .5em 0 1.5em;
+  font-size: 1.4rem;
   color: #333;
 }
 
-a:hover, a:active {
-text-shadow: #FC0 0 0 10px;
-}
+
