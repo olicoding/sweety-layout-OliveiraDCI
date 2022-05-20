@@ -27,6 +27,8 @@ body {
 /* Header */
 
 header {
+  position: sticky;
+  top: 0;
   background-color: #fff;
   padding: 1em;
   width: 100vw;
@@ -42,17 +44,47 @@ header {
   letter-spacing: 2px;
 }
 
-.nav-list {
-  /* display: none; */
+.nav-list li {
+  position: relative;
+  list-style: none;
+  padding: 0 1em;
+  font-size: 1.8rem;
+  font-weight: 600;
 }
 
-.nav-list li {
-  list-style: none;
+.nav-list li::before {
+  position: absolute;
+  content: "";
+  top: -5px;
+  left: 5px;
+  width: 90%;
+  height: 5px;
+}
+
+li:hover::before {
+  background-color: deeppink;
 }
 
 .nav-btn {
-  padding: 0.8em 1em;
+  padding: 0.7em 1em;
   margin: 0 0.2em;
-  background-color: rgba(150, 150, 150, 0.5);
   border-radius: 5px;
+  background-color: rgba(150, 150, 150, 0.5);
+  font-size: 2rem;
+}
+
+.nav-btn:hover {
+  background-color: deeppink;
+  color: #fff;
+}
+
+/* Links */
+
+a:link, a:visited {
+  text-decoration: none;
+  color: #333;
+}
+
+a:hover, a:active {
+text-shadow: #FC0 0 0 10px;
 }
